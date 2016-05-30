@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <title>ToDo App</title>
+    </head>
+    <body>
+        <div class="main">
+            <h3><strong>Hello! Please, enter your todo :) </strong></h3>
+            <div class="todoContainer" ng-controller="listController">
+                <div class="inputArea">
+                     <input type="text" autofocus="autofocus" ng-model="lastTodo"  placeholder="Enter todo">
+                     <button type="button" class="btn btn-primary" ng-keypress="myFunct($event)" ng-click="addItem(lastTodo)">Add</button>
+                </div>
+                    <div class="list" ng-repeat="todo in todos">
+                     <div class="todo">{{todo.number + ")" + " " + todo.text}}</div>
+                    <div>
+            </div>
+        </div>
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+        <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+        <script src="bower_components/angular-strap/dist/angular-strap.compat.js"></script>
+        <script src="js/module.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/directives/todoDirective.js"></script>
+    </body>
+</html> 

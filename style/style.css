@@ -1,0 +1,25 @@
+.main{
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 10%;
+	border: 3px solid #337ab7;
+	padding: 5px;
+	border-radius: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.inputArea{
+	margin: 5px;
+	width: 100%;
+	text-align: center;
+}
+input{
+	width: 70%;
+	line-height: 2.5;
+}
+.list{
+	text-align:center;
+}
+.todo{
+	font-family: 'Verdana';
+}
