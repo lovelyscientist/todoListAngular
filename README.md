@@ -1,7 +1,4 @@
-# todoListAngular
+# Create your ToDo list using Angular.js
 Simple todo list application written with Angular.js 
 
-This simple project helps you to create a simple todo list using Angular.js.
-
-To run the application please do bower.install
-Main file - index.html
+To run the application please do <b>bower.install</b> <br>
