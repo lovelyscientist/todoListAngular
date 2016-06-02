@@ -22,4 +22,10 @@ input{
 }
 .todo{
 	font-family: 'Verdana';
+	text-align: center;
+	padding: 3px;
+}
+.todoText{
+	display: inline-block;
+	width: 50%;
 }

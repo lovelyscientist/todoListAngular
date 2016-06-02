@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="todoApp">
+<html lang="en" ng-app="app">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="icon" href="http://getbootstrap.com/favicon.ico">
@@ -10,23 +10,24 @@
     <body>
         <div class="main">
             <h3><strong>Hello! Please, enter your todo :) </strong></h3>
-            <div class="todoContainer" ng-controller="listController">
+            <div class="todoContainer" ng-controller="ListController">
                 <div class="inputArea">
                      <input type="text" autofocus="autofocus" ng-model="lastTodo"  placeholder="Enter todo">
                      <button type="button" class="btn btn-primary" ng-keypress="myFunct($event)" ng-click="addItem(lastTodo)">Add</button>
                 </div>
                     <div class="list" ng-repeat="todo in todos">
-                     <div class="todo">{{todo.number + ")" + " " + todo.text}}</div>
+                     <div class="todo"></div>
+                     <todo-item></todo-item>
                     <div>
             </div>
         </div>
 
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
-        <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
-        <script src="bower_components/angular-strap/dist/angular-strap.compat.js"></script>
-        <script src="js/module.js"></script>
-        <script src="js/controller.js"></script>
-        <script src="js/directives/todoDirective.js"></script>
+        <script src="js/bower_components/angular/angular.js"></script>
+        <script src="js/bower_components/angular-strap/dist/angular-strap.js"></script>
+        <script src="js/bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+        <script src="js/bower_components/angular-strap/dist/angular-strap.compat.js"></script>
+        <script src="js/todos/todoModule.js"></script>
+        <script src="js/todos/todoController.js"></script>
+        <script src="js/todos/todoDirective.js"></script>
     </body>
 </html> 
