@@ -12,8 +12,8 @@
             <h3><strong>Hello! Please, enter your todo :) </strong></h3>
             <div class="todoContainer" ng-controller="ListController">
                 <div class="inputArea">
-                     <input type="text" autofocus="autofocus" ng-model="lastTodo"  placeholder="Enter todo">
-                     <button type="button" class="btn btn-primary" ng-keypress="myFunct($event)" ng-click="addItem(lastTodo)">Add</button>
+                     <input type="text" autofocus="autofocus" ng-model="lastTodo" ng-focus="clearInput()" ng-keyup="onEnter($event)" placeholder="Enter todo">
+                     <button type="button" class="btn btn-primary" ng-click="addItem(lastTodo)">Add</button>
                 </div>
                     <div class="list" ng-repeat="todo in todos">
                      <div class="todo"></div>
